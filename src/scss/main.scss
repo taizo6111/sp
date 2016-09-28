@@ -1,0 +1,13 @@
+@charset 'utf-8';
+
+p {
+  color: blue;
+    span{
+      font-size: 15px;
+      display: block;
+    }
+
+    span:before{
+      content: "デデデ";
+    }
+}
