@@ -1,1 +1,1 @@
-p{color:#00f}p span{font-size:20px;display:block}
+@charset "UTF-8";p{color:#00f}p span{font-size:15px;display:block}p span:before{content:"デデデ"}ul li:first-child{color:#00f}ul li:nth-child(3){color:red;font-size:20px;margin:30px}ul li:last-child{color:#00f}

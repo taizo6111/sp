@@ -1,13 +1,33 @@
 @charset 'utf-8';
+$blue_color : blue;
+$red_color : red;
+@mixin redText($size){
+  color: red;
+  font-size: $size * 1px;
+  margin: 30px;
+}
 
 p {
-  color: blue;
+  color: $blue_color;
     span{
       font-size: 15px;
       display: block;
+      &:before{
+        content: "デデデ";
+      }
     }
+}
+ul{
+  li{
 
-    span:before{
-      content: "デデデ";
+    &:first-child{
+      color: $blue_color;
     }
+    &:nth-child(3) {
+      @include redText(20);
+    }
+    &:last-child{
+      color: $blue_color;
+    }
+  }
 }
